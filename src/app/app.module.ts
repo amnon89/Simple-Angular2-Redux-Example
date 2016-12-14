@@ -10,6 +10,7 @@ import { NgReduxModule }    from 'ng2-redux';
 
 // App
 import { App }              from './app'
+import * as AppComponents from "../components";
 
 
 
@@ -19,6 +20,8 @@ import { App }              from './app'
         NgReduxModule.forRoot()
     ],
     declarations: [
+        App,
+        AppComponents.Counter,
 
     ],
     bootstrap: [
